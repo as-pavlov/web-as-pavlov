@@ -492,6 +492,7 @@ sharethrough.com, zMvLLpo1, RESELLER, d53b998a7bd4ecd2
 showheroes.com, 6031, RESELLER
 showheroes.com, 6596, RESELLER
 silvermob.com, 464, RESELLER
+singularads, 548745, RESELLER
 smaato.com, 1100004890, RESELLER, 07bcf65f187117b4
 smaato.com, 1100040398, RESELLER, 07bcf65f187117b4
 smaato.com, 1100044156, RESELLER, 07bcf65f187117b4
