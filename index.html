@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Базовая мета-разметка документа -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO: заголовок и описание (по умолчанию EN, JS подменяет при переключении языка) -->
+    <title>AS-Pavlov — Game and app developer</title>
+    <meta name="description" content="AS-Pavlov — mobile game and app developer for Android. Tanya rescues the cats, Any Training.">
+
+    <!-- Open Graph: превью при шеринге ссылки -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AS-Pavlov — Game and app developer">
+    <meta property="og:description" content="Mobile games and apps for Android.">
+    <meta property="og:url" content="https://as-pavlov.com/">
+    <meta property="og:image" content="https://as-pavlov.com/assets/TRCPict.png">
+
+    <!-- Иконка вкладки браузера -->
+    <link rel="icon" href="assets/flower.png" type="image/png" sizes="any">
+
+    <!-- Подключение единого файла стилей -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- ========================================================= -->
+    <!-- Шапка сайта: лого + навигация + переключатель языка        -->
+    <!-- ========================================================= -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <!-- Логотип-ссылка возвращает на верх страницы -->
+            <a class="logo" href="#top" aria-label="AS-Pavlov">
+                <img class="logo-icon" src="assets/flower.png" alt="" width="28" height="28">
+                <span>AS-Pavlov</span>
+            </a>
+
+            <!-- Правая часть шапки: навигация + переключатель языков -->
+            <div class="header-right">
+                <!-- Основная навигация по якорям и страницам -->
+                <nav class="nav" aria-label="Main navigation">
+                    <a href="#works" data-i18n="nav.works">Games &amp; apps</a>
+                    <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
+                </nav>
+
+                <!-- Переключатель языков EN / RU -->
+                <div class="lang-switch" role="group" aria-label="Language switcher">
+                    <button type="button" class="lang-btn" data-lang="en">EN</button>
+                    <button type="button" class="lang-btn" data-lang="ru">RU</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================================= -->
+    <!-- Главное содержимое страницы                                -->
+    <!-- ========================================================= -->
+    <main id="top">
+
+        <!-- Hero: первый экран, представление разработчика -->
+        <section class="hero">
+            <div class="container hero-inner">
+                <!-- Главное имя/бренд (одинаково в обоих языках) -->
+                <h1 class="hero-title">AS-Pavlov</h1>
+
+                <!-- Профессия одной строкой -->
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Game and app developer</p>
+
+                <!-- Короткое представление -->
+                <p class="hero-text" data-i18n="hero.text">
+                    I make mobile games and apps for Android with Unity.
+                    Two of my projects are on Google Play — a casual kids game and a fitness workout app.
+                </p>
+
+                <!-- Главное действие: страница разработчика в Google Play -->
+                <a class="btn btn-primary"
+                   href="https://play.google.com/store/apps/developer?id=AS-Pavlov"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   data-i18n="hero.cta">
+                    My work on Google Play
+                </a>
+            </div>
+        </section>
+
+        <!-- Раздел с двумя карточками: игра и приложение -->
+        <section class="works" id="works">
+            <div class="container">
+                <h2 class="section-title" data-i18n="works.title">Games &amp; apps</h2>
+
+                <!-- Сетка карточек, адаптивная: 2 колонки на десктопе, 1 на мобильном -->
+                <div class="cards">
+
+                    <!-- Карточка 1: Tanya rescues the cats -->
+                    <article class="card">
+                        <!-- Иконка игры из Google Play Console -->
+                        <img class="card-icon"
+                             src="assets/TRCIcon.png"
+                             alt="Tanya rescues the cats"
+                             width="96" height="96"
+                             loading="lazy">
+
+                        <h3 class="card-title">Tanya rescues the cats</h3>
+
+                        <!-- Описание из Google Play (переводимое) -->
+                        <p class="card-desc" data-i18n="card1.desc">
+                            Jump from island to island. Rescue kittens. Shoot down the monsters with ball.
+                        </p>
+
+                        <!-- Ссылка на страницу игры в Google Play -->
+                        <a class="btn btn-secondary"
+                           href="https://play.google.com/store/apps/details?id=com.ASPavlov.TRC.google"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Google Play
+                        </a>
+                    </article>
+
+                    <!-- Карточка 2: Any Training -->
+                    <article class="card">
+                        <!-- Иконка приложения из Google Play Console -->
+                        <img class="card-icon"
+                             src="assets/ATIcon.png"
+                             alt="Any Training"
+                             width="96" height="96"
+                             loading="lazy">
+
+                        <h3 class="card-title">Any Training</h3>
+
+                        <!-- Описание из Google Play (переводимое) -->
+                        <p class="card-desc" data-i18n="card2.desc">
+                            Application for creating your own fitness workouts.
+                        </p>
+
+                        <!-- Ссылка на страницу приложения в Google Play -->
+                        <a class="btn btn-secondary"
+                           href="https://play.google.com/store/apps/details?id=com.ASPavlov.AnyTrainingApp.google"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Google Play
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========================================================= -->
+    <!-- Подвал: копирайт, контактный email, ссылки на Privacy/Terms -->
+    <!-- ========================================================= -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="copy">© 2026 AS-Pavlov</p>
+
+            <!-- Контактный email требуется COPPA/Google Play для связи по приватности -->
+            <p class="contact">
+                <a href="mailto:andrey.sergreevich.pavlov@gmail.com">andrey.sergreevich.pavlov@gmail.com</a>
+            </p>
+
+            <!-- Юридические страницы -->
+            <nav class="footer-nav" aria-label="Legal">
+                <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+                <span aria-hidden="true">·</span>
+                <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Скрипт переключения языка (defer, чтобы не блокировать отрисовку) -->
+    <script src="script.js" defer></script>
+</body>
+</html>

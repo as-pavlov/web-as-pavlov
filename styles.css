@@ -1,0 +1,410 @@
+/* =============================================================
+   AS-Pavlov landing — общие стили
+   Светлая тема, mobile-first, без зависимостей.
+   ============================================================= */
+
+/* ---------- CSS-переменные: палитра и размеры ---------- */
+:root {
+    /* Базовые цвета светлой темы */
+    --bg: #ffffff;
+    --bg-soft: #f6f7f9;
+    --text: #1a1d23;
+    --text-muted: #5b6470;
+    --border: #e5e7eb;
+
+    /* Акцентный цвет — спокойный синий */
+    --accent: #2563eb;
+    --accent-hover: #1d4ed8;
+
+    /* Типографика и сетка */
+    --max-width: 1080px;
+    --radius: 12px;
+    --radius-lg: 20px;
+    --gap: 24px;
+}
+
+/* ---------- Сброс и базовые правила ---------- */
+*,
+*::before,
+*::after {
+    /* Единая модель размеров на всём документе */
+    box-sizing: border-box;
+}
+
+html {
+    /* Плавный скролл при переходе по якорям */
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+
+    /* Системный шрифтовой стек: грузится мгновенно, выглядит нативно */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+
+    /* Сглаживание шрифтов на macOS/iOS */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Изображения по умолчанию адаптивные */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Базовый стиль ссылок */
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Утилитарный контейнер с центровкой ---------- */
+.container {
+    /* Центрируем по горизонтали и ограничиваем максимум */
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* =============================================================
+   Шапка сайта
+   ============================================================= */
+.site-header {
+    /* Лёгкая граница снизу отделяет шапку от контента */
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+
+    /* Прилипает к верху при прокрутке */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-inner {
+    /* Лого слева, навигация справа */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+}
+
+.logo {
+    /* Логотип = иконка-цветок + текст в одну строку */
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--text);
+}
+
+.logo:hover {
+    text-decoration: none;
+    color: var(--accent);
+}
+
+/* Иконка-цветок слева от названия */
+.logo-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    display: block;
+}
+
+.nav {
+    /* Горизонтальное меню с расстоянием между пунктами */
+    display: flex;
+    gap: 24px;
+}
+
+.nav a {
+    color: var(--text);
+    font-weight: 500;
+}
+
+.nav a:hover {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+/* Правая часть шапки: навигация + переключатель языка в одной строке */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ---------- Переключатель языка EN / RU ---------- */
+.lang-switch {
+    /* Группа из двух кнопок в общей рамке */
+    display: inline-flex;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.lang-btn {
+    /* Сбрасываем дефолтный стиль кнопки */
+    background: transparent;
+    border: 0;
+    padding: 6px 12px;
+    font: inherit;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.lang-btn:hover {
+    /* Лёгкая подсветка при наведении */
+    color: var(--text);
+    background: var(--bg-soft);
+}
+
+.lang-btn.active {
+    /* Активный язык подсвечен акцентом */
+    background: var(--accent);
+    color: #ffffff;
+}
+
+/* На узких экранах прячем основную навигацию, оставляем только переключатель */
+@media (max-width: 540px) {
+    .nav {
+        display: none;
+    }
+}
+
+/* =============================================================
+   Hero — первый экран
+   ============================================================= */
+.hero {
+    /* Большие отступы сверху/снизу, мягкий фон */
+    background: var(--bg-soft);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-inner {
+    /* Ограничиваем ширину текстового блока для удобочитаемости */
+    max-width: 720px;
+}
+
+.hero-title {
+    /* Главный H1 — крупно и без лишних отступов */
+    font-size: clamp(36px, 6vw, 56px);
+    line-height: 1.15;
+    margin: 0 0 12px;
+    letter-spacing: -0.02em;
+}
+
+.hero-subtitle {
+    /* Подзаголовок под H1, чуть приглушённый */
+    font-size: clamp(18px, 2.5vw, 22px);
+    color: var(--text-muted);
+    margin: 0 0 24px;
+    font-weight: 500;
+}
+
+.hero-text {
+    /* Параграф с описанием */
+    font-size: 17px;
+    color: var(--text);
+    margin: 0 0 32px;
+}
+
+/* =============================================================
+   Кнопки
+   ============================================================= */
+.btn {
+    /* Базовый стиль для всех кнопок-ссылок */
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.15s ease, color 0.15s ease,
+        border-color 0.15s ease;
+    border: 1px solid transparent;
+}
+
+.btn:hover {
+    text-decoration: none;
+}
+
+/* Основная кнопка: акцентный фон, белый текст */
+.btn-primary {
+    background: var(--accent);
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: var(--accent-hover);
+}
+
+/* Вторичная кнопка: контурная, для карточек */
+.btn-secondary {
+    background: transparent;
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+.btn-secondary:hover {
+    background: var(--accent);
+    color: #ffffff;
+}
+
+/* =============================================================
+   Раздел "Игры и приложения"
+   ============================================================= */
+.works {
+    /* Большой вертикальный отступ от соседних блоков */
+    padding: 80px 0;
+}
+
+.section-title {
+    /* Заголовок секции по центру */
+    font-size: clamp(28px, 4vw, 36px);
+    margin: 0 0 40px;
+    text-align: center;
+    letter-spacing: -0.01em;
+}
+
+.cards {
+    /* Адаптивная сетка карточек: 1 колонка на узких, 2 на широких */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap);
+}
+
+/* На экранах от 720px — две колонки */
+@media (min-width: 720px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.card {
+    /* Карточка: фон, скругление, граница, паддинг */
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+
+    /* Содержимое центрировано вертикально и по центру по горизонтали */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    /* Плавный hover-эффект */
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+    /* Лёгкий подъём карточки при наведении */
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* ---------- Иконка карточки ---------- */
+/* Реальная PNG-иконка из Google Play Console */
+.card-icon {
+    /* Квадрат фиксированного размера со скруглением, как у app-icon на Android */
+    width: 96px;
+    height: 96px;
+    border-radius: 22px;
+
+    /* Чтобы PNG любого соотношения корректно вписался в квадрат */
+    object-fit: cover;
+
+    /* Отступ под заголовком */
+    margin-bottom: 20px;
+
+    /* Тень для объёма */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.card-title {
+    /* Название карточки */
+    font-size: 22px;
+    margin: 0 0 12px;
+}
+
+.card-desc {
+    /* Описание под названием */
+    color: var(--text-muted);
+    margin: 0 0 24px;
+    flex-grow: 1; /* Растягивается, чтобы кнопка прижалась к низу */
+}
+
+/* =============================================================
+   Подвал
+   ============================================================= */
+.site-footer {
+    /* Граница сверху и мягкий фон */
+    border-top: 1px solid var(--border);
+    background: var(--bg-soft);
+    padding: 32px 0;
+    margin-top: 40px;
+}
+
+.footer-inner {
+    /* Колонки в подвале: на мобилке — стопкой, на десктопе — в ряд */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+}
+
+/* На широких экранах подвал становится одной строкой */
+@media (min-width: 720px) {
+    .footer-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+.copy,
+.contact {
+    /* Сбрасываем стандартные отступы у параграфов в подвале */
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.contact a {
+    color: var(--text-muted);
+}
+
+.contact a:hover {
+    color: var(--accent);
+}
+
+.footer-nav {
+    /* Юридические ссылки в подвале */
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.footer-nav a {
+    color: var(--text-muted);
+}
+
+.footer-nav a:hover {
+    color: var(--accent);
+}
