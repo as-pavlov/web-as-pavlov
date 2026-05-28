@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en">
+<!-- data-page="home" используется JS (script.js) для выбора per-page <title> и <meta description> -->
+<html lang="en" data-page="home">
 <head>
     <!-- Базовая мета-разметка документа -->
     <meta charset="utf-8">
@@ -13,8 +14,8 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="AS-Pavlov — Game and app developer">
     <meta property="og:description" content="Mobile games and apps for Android.">
-    <meta property="og:url" content="https://as-pavlov.com/">
-    <meta property="og:image" content="https://as-pavlov.com/assets/TRCPict.png">
+    <meta property="og:url" content="https://www.as-pavlov.com/">
+    <meta property="og:image" content="https://www.as-pavlov.com/assets/TRCPict.png">
 
     <!-- Иконка вкладки браузера -->
     <link rel="icon" href="assets/flower.png" type="image/png" sizes="any">
@@ -37,10 +38,11 @@
 
             <!-- Правая часть шапки: навигация + переключатель языков -->
             <div class="header-right">
-                <!-- Основная навигация по якорям и страницам -->
+                <!-- Основная навигация по якорям. -->
+                <!-- Privacy-ссылки убраны из шапки: они индивидуальны для каждого приложения, -->
+                <!-- поэтому теперь живут в карточках и в подвале. -->
                 <nav class="nav" aria-label="Main navigation">
                     <a href="#works" data-i18n="nav.works">Games &amp; apps</a>
-                    <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
                 </nav>
 
                 <!-- Переключатель языков EN / RU -->
@@ -114,6 +116,13 @@
                            rel="noopener noreferrer">
                             Google Play
                         </a>
+
+                        <!-- Своя Privacy Policy для Tanya — ссылка на отдельную страницу -->
+                        <a class="card-privacy"
+                           href="privacy-tanya.html"
+                           data-i18n="card.privacy">
+                            Privacy Policy
+                        </a>
                     </article>
 
                     <!-- Карточка 2: Any Training -->
@@ -139,6 +148,13 @@
                            rel="noopener noreferrer">
                             Google Play
                         </a>
+
+                        <!-- Своя Privacy Policy для Any Training — ссылка на отдельную страницу -->
+                        <a class="card-privacy"
+                           href="privacy-any-training.html"
+                           data-i18n="card.privacy">
+                            Privacy Policy
+                        </a>
                     </article>
 
                 </div>
@@ -159,11 +175,11 @@
                 <a href="mailto:andrey.sergreevich.pavlov@gmail.com">andrey.sergreevich.pavlov@gmail.com</a>
             </p>
 
-            <!-- Юридические страницы -->
+            <!-- Юридические страницы: по одной Privacy Policy на каждое приложение -->
             <nav class="footer-nav" aria-label="Legal">
-                <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+                <a href="privacy-tanya.html" data-i18n="footer.privacy.tanya">Privacy: Tanya</a>
                 <span aria-hidden="true">·</span>
-                <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
+                <a href="privacy-any-training.html" data-i18n="footer.privacy.at">Privacy: Any Training</a>
             </nav>
         </div>
     </footer>

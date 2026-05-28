@@ -408,3 +408,79 @@ a:hover {
 .footer-nav a:hover {
     color: var(--accent);
 }
+
+/* =============================================================
+   Privacy / Terms — оформление длинных юридических страниц
+   ============================================================= */
+.legal {
+    /* Большие отступы сверху/снизу для воздуха вокруг текста */
+    padding: 60px 0 40px;
+}
+
+.legal-inner {
+    /* Узкая колонка для удобочитаемости длинного текста */
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.legal h1 {
+    /* Главный заголовок страницы политики */
+    font-size: clamp(28px, 4vw, 38px);
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+}
+
+/* Дата вступления в силу — приглушённая строка под H1 */
+.legal-meta {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin: 0 0 32px;
+}
+
+.legal h2 {
+    /* Подзаголовки секций политики */
+    font-size: 22px;
+    margin: 32px 0 12px;
+    letter-spacing: -0.005em;
+}
+
+.legal p {
+    /* Параграфы политики: комфортный line-height для длинного чтения */
+    margin: 0 0 16px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text);
+}
+
+.legal ul {
+    /* Списки SDK и пр. */
+    margin: 0 0 16px;
+    padding-left: 22px;
+    line-height: 1.7;
+}
+
+.legal li {
+    /* Каждый пункт списка с небольшим отступом снизу */
+    margin-bottom: 10px;
+}
+
+.legal a {
+    /* Ссылки внутри политики — обычным акцентным цветом, перенос длинных URL */
+    color: var(--accent);
+    word-break: break-word;
+}
+
+/* =============================================================
+   Карточки: ссылка "Privacy" под кнопкой Google Play
+   ============================================================= */
+.card-privacy {
+    /* Маленькая, приглушённая ссылка на политику конфиденциальности приложения */
+    margin-top: 12px;
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+.card-privacy:hover {
+    color: var(--accent);
+}

@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en" data-page="privacy-any-training">
+<head>
+    <!-- Базовая мета-разметка документа -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Заголовок и описание (по умолчанию EN, JS подменяет при переключении языка) -->
+    <title>Privacy Policy — Any Training — AS-Pavlov</title>
+    <meta name="description" content="Privacy Policy for the mobile fitness application Any Training by AS-Pavlov.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Privacy Policy — Any Training — AS-Pavlov">
+    <meta property="og:description" content="Privacy Policy for the mobile fitness application Any Training by AS-Pavlov.">
+    <meta property="og:url" content="https://www.as-pavlov.com/privacy-any-training.html">
+    <meta property="og:image" content="https://www.as-pavlov.com/assets/ATPict.png">
+
+    <!-- Иконка вкладки -->
+    <link rel="icon" href="assets/flower.png" type="image/png" sizes="any">
+
+    <!-- Подключение единого файла стилей -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- ========================================================= -->
+    <!-- Шапка сайта: лого + ссылка "Главная" + переключатель языка  -->
+    <!-- ========================================================= -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <!-- Логотип-ссылка ведёт на главную -->
+            <a class="logo" href="index.html" aria-label="AS-Pavlov">
+                <img class="logo-icon" src="assets/flower.png" alt="" width="28" height="28">
+                <span>AS-Pavlov</span>
+            </a>
+
+            <!-- Правая часть шапки: навигация + переключатель языков -->
+            <div class="header-right">
+                <!-- Навигация: на legal-странице оставляем только ссылку "Главная" -->
+                <nav class="nav" aria-label="Main navigation">
+                    <a href="index.html" data-i18n="nav.home">Home</a>
+                </nav>
+
+                <!-- Переключатель языков EN / RU -->
+                <div class="lang-switch" role="group" aria-label="Language switcher">
+                    <button type="button" class="lang-btn" data-lang="en">EN</button>
+                    <button type="button" class="lang-btn" data-lang="ru">RU</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================================= -->
+    <!-- Тело Privacy Policy                                        -->
+    <!-- ========================================================= -->
+    <main>
+        <section class="legal">
+            <div class="legal-inner">
+
+                <!-- Заголовок политики -->
+                <h1 data-i18n="privacy-at.h1">Any Training — Privacy Policy</h1>
+
+                <!-- Дата вступления в силу -->
+                <p class="legal-meta">
+                    <strong data-i18n="legal.effective.label">Effective date:</strong>
+                    <span data-i18n="legal.effective.date">May 28, 2026</span>
+                </p>
+
+                <!-- Вступление: кто разработчик, что за приложение -->
+                <p data-i18n="privacy-at.intro">
+                    This Privacy Policy describes how the mobile fitness application "Any Training" (the "App") handles information about its users. The App is developed and published by AS-Pavlov (Andrey Pavlov) ("I", "we").
+                </p>
+
+                <!-- Секция: аудитория (взрослые, COPPA не применяется) -->
+                <h2 data-i18n="privacy-at.audience.title">Audience</h2>
+                <p data-i18n="privacy-at.audience.text">
+                    This App is intended for adult users. It is not directed at children under the age of 13.
+                </p>
+
+                <!-- Секция: какие данные собирает разработчик -->
+                <h2 data-i18n="privacy-at.collect.title">Information I collect</h2>
+                <p data-i18n="privacy-at.collect.text">
+                    I do not directly collect, store or process any personally identifiable information (PII) on my own servers. The App does not require an account and does not ask for your name, email or phone number. All workout data you create in the App (exercises, sessions, training programs) is stored locally on your device.
+                </p>
+
+                <!-- Секция: локальные данные -->
+                <h2 data-i18n="privacy-at.local.title">Local data on the device</h2>
+                <p data-i18n="privacy-at.local.text">
+                    Workout data, settings and similar information are stored in the local storage of your device. This data never leaves your device. To delete it, uninstall the App or use Android: Settings → Apps → Any Training → Storage → Clear data.
+                </p>
+
+                <!-- Секция: данные о здоровье — явно сказать что НЕТ -->
+                <h2 data-i18n="privacy-at.health.title">Health-related data</h2>
+                <p data-i18n="privacy-at.health.text">
+                    The App does not connect to Google Fit, Apple Health or any external health platform. No biometric or medical data is collected.
+                </p>
+
+                <!-- Секция: сторонние SDK -->
+                <h2 data-i18n="privacy-at.sdks.title">Third-party advertising SDKs</h2>
+                <p data-i18n="privacy-at.sdks.text">
+                    To monetise the App, the following third-party advertising SDK is integrated. The SDK may collect non-personal technical information (device model, OS version, IP address, advertising identifier, ad performance data) to serve advertisements.
+                </p>
+
+                <!-- Список SDK с ссылкой на политику -->
+                <ul>
+                    <!-- IronSource LevelPlay (Unity LevelPlay) — единственный медиатор в Any Training -->
+                    <li>
+                        <strong>IronSource LevelPlay</strong>
+                        <span data-i18n="privacy-at.sdks.is.desc"> — mediation platform with bidders ironSource, Unity Ads, InMobi, Yandex bidder. </span>
+                        <a href="https://developers.is.com/ironsource-mobile/air/ironsource-mobile-privacy-policy/" target="_blank" rel="noopener noreferrer" data-i18n="legal.privacyLink">Privacy Policy</a>
+                    </li>
+                </ul>
+
+                <!-- Подсказка пользователю про opt-out персонализированной рекламы -->
+                <p data-i18n="privacy-at.sdks.optout">
+                    You can opt out of personalised advertising on Android: Settings → Privacy / Google → Ads → Delete advertising ID.
+                </p>
+
+                <!-- Секция: разрешения Android -->
+                <h2 data-i18n="privacy-at.permissions.title">Permissions</h2>
+                <p data-i18n="privacy-at.permissions.text">
+                    The App requests only the standard network permissions required for advertising delivery (INTERNET, ACCESS_NETWORK_STATE).
+                </p>
+
+                <!-- Секция: удаление данных -->
+                <h2 data-i18n="privacy-at.deletion.title">Data deletion</h2>
+                <p data-i18n="privacy-at.deletion.text1">
+                    Because I do not store any personal data on my side, there is nothing for me to delete on my servers. To remove all local data, uninstall the App.
+                </p>
+                <p data-i18n="privacy-at.deletion.text2">
+                    To request data deletion from the advertising SDK, please refer to the IronSource Privacy Policy linked above. If you need help coordinating such a request, you can email me. Per GDPR I will respond within 30 days.
+                </p>
+
+                <!-- Секция: контакты разработчика -->
+                <h2 data-i18n="legal.contact.title">Contact</h2>
+                <p>
+                    Andrey Pavlov, AS-Pavlov<br>
+                    <a href="mailto:andrey.sergreevich.pavlov@gmail.com">andrey.sergreevich.pavlov@gmail.com</a>
+                </p>
+
+                <!-- Секция: изменения политики -->
+                <h2 data-i18n="legal.changes.title">Changes to this policy</h2>
+                <p data-i18n="legal.changes.text">
+                    If this Privacy Policy changes, the new version will be published on this URL with an updated effective date.
+                </p>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================================= -->
+    <!-- Подвал: копирайт, контакт, ссылки на обе политики          -->
+    <!-- ========================================================= -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="copy">© 2026 AS-Pavlov</p>
+
+            <p class="contact">
+                <a href="mailto:andrey.sergreevich.pavlov@gmail.com">andrey.sergreevich.pavlov@gmail.com</a>
+            </p>
+
+            <nav class="footer-nav" aria-label="Legal">
+                <a href="privacy-tanya.html" data-i18n="footer.privacy.tanya">Privacy: Tanya</a>
+                <span aria-hidden="true">·</span>
+                <a href="privacy-any-training.html" data-i18n="footer.privacy.at">Privacy: Any Training</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Скрипт переключения языка -->
+    <script src="script.js" defer></script>
+</body>
+</html>

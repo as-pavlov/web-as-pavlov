@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en" data-page="privacy-tanya">
+<head>
+    <!-- Базовая мета-разметка документа -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Заголовок и описание (по умолчанию EN, JS подменяет при переключении языка) -->
+    <title>Privacy Policy — Tanya rescues the cats — AS-Pavlov</title>
+    <meta name="description" content="Privacy Policy for the mobile game Tanya rescues the cats by AS-Pavlov.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Privacy Policy — Tanya rescues the cats — AS-Pavlov">
+    <meta property="og:description" content="Privacy Policy for the mobile game Tanya rescues the cats by AS-Pavlov.">
+    <meta property="og:url" content="https://www.as-pavlov.com/privacy-tanya.html">
+    <meta property="og:image" content="https://www.as-pavlov.com/assets/TRCPict.png">
+
+    <!-- Иконка вкладки -->
+    <link rel="icon" href="assets/flower.png" type="image/png" sizes="any">
+
+    <!-- Подключение единого файла стилей -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- ========================================================= -->
+    <!-- Шапка сайта: лого + ссылка "Главная" + переключатель языка  -->
+    <!-- ========================================================= -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <!-- Логотип-ссылка ведёт на главную -->
+            <a class="logo" href="index.html" aria-label="AS-Pavlov">
+                <img class="logo-icon" src="assets/flower.png" alt="" width="28" height="28">
+                <span>AS-Pavlov</span>
+            </a>
+
+            <!-- Правая часть шапки: навигация + переключатель языков -->
+            <div class="header-right">
+                <!-- Навигация: на legal-странице оставляем только ссылку "Главная" -->
+                <nav class="nav" aria-label="Main navigation">
+                    <a href="index.html" data-i18n="nav.home">Home</a>
+                </nav>
+
+                <!-- Переключатель языков EN / RU -->
+                <div class="lang-switch" role="group" aria-label="Language switcher">
+                    <button type="button" class="lang-btn" data-lang="en">EN</button>
+                    <button type="button" class="lang-btn" data-lang="ru">RU</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================================= -->
+    <!-- Тело Privacy Policy                                        -->
+    <!-- ========================================================= -->
+    <main>
+        <section class="legal">
+            <div class="legal-inner">
+
+                <!-- Заголовок политики -->
+                <h1 data-i18n="privacy-tanya.h1">Tanya rescues the cats — Privacy Policy</h1>
+
+                <!-- Дата вступления в силу -->
+                <p class="legal-meta">
+                    <strong data-i18n="legal.effective.label">Effective date:</strong>
+                    <span data-i18n="legal.effective.date">May 28, 2026</span>
+                </p>
+
+                <!-- Вступление: кто разработчик, что за приложение -->
+                <p data-i18n="privacy-tanya.intro">
+                    This Privacy Policy describes how the mobile game "Tanya rescues the cats" (the "App") handles information about its users. The App is developed and published by AS-Pavlov (Andrey Pavlov) ("I", "we").
+                </p>
+
+                <!-- Секция: детская аудитория и применимые нормы -->
+                <h2 data-i18n="privacy-tanya.audience.title">Children's audience</h2>
+                <p data-i18n="privacy-tanya.audience.text">
+                    This App is designed for children. It is built and operated in compliance with the Children's Online Privacy Protection Act (COPPA), the Google Play Families Policy, and the EU GDPR rules for children.
+                </p>
+
+                <!-- Секция: какие данные собирает разработчик -->
+                <h2 data-i18n="privacy-tanya.collect.title">Information I collect</h2>
+                <p data-i18n="privacy-tanya.collect.text">
+                    I do not directly collect, store or process any personally identifiable information (PII) on my own servers. The App does not contain user accounts, does not ask the user for their name, email, phone number or any other personal data, and does not contain user-generated content shared with other users.
+                </p>
+
+                <!-- Секция: AD_ID — критично для COPPA / Families Policy -->
+                <h2 data-i18n="privacy-tanya.adid.title">Android Advertising ID</h2>
+                <p data-i18n="privacy-tanya.adid.text">
+                    The App does NOT request the Android Advertising ID (AD_ID). The corresponding permission is explicitly removed from the App's manifest. As a result, advertising shown in the App is contextual (non-personalized) only.
+                </p>
+
+                <!-- Секция: локальные данные -->
+                <h2 data-i18n="privacy-tanya.local.title">Local data on the device</h2>
+                <p data-i18n="privacy-tanya.local.text">
+                    The App stores game progress, settings and similar information in the local storage of your device. This data never leaves your device. To delete it, uninstall the App or use Android: Settings → Apps → Tanya rescues the cats → Storage → Clear data.
+                </p>
+
+                <!-- Секция: покупки -->
+                <h2 data-i18n="privacy-tanya.purchases.title">In-app purchases</h2>
+                <p data-i18n="privacy-tanya.purchases.text">
+                    In-app purchases are processed by Google Play Billing. I do not see your payment details — they are handled entirely by Google. To request a refund or manage purchases, use your Google Account.
+                </p>
+
+                <!-- Секция: сторонние SDK -->
+                <h2 data-i18n="privacy-tanya.sdks.title">Third-party advertising SDKs</h2>
+                <p data-i18n="privacy-tanya.sdks.text">
+                    To monetise the App, the following third-party advertising SDKs are integrated. These SDKs may collect non-personal technical information (such as device model, OS version, IP address, ad performance data) to serve contextual advertisements. They do not receive personal data from me. Each SDK is configured for child-directed (COPPA-compliant) mode where applicable.
+                </p>
+
+                <!-- Список SDK с ссылками на их политики -->
+                <ul>
+                    <!-- IronSource LevelPlay (Unity LevelPlay) -->
+                    <li>
+                        <strong>IronSource LevelPlay</strong>
+                        <span data-i18n="privacy-tanya.sdks.is.desc"> — mediation platform with bidders ironSource, Unity Ads, InMobi, Yandex bidder. </span>
+                        <a href="https://developers.is.com/ironsource-mobile/air/ironsource-mobile-privacy-policy/" target="_blank" rel="noopener noreferrer" data-i18n="legal.privacyLink">Privacy Policy</a>
+                    </li>
+
+                    <!-- Yandex Mobile Ads (с AppMetrica внутри) -->
+                    <li>
+                        <strong>Yandex Mobile Ads</strong>
+                        <span data-i18n="privacy-tanya.sdks.yandex.desc"> — uses AppMetrica internally for attribution and anti-fraud. </span>
+                        <a href="https://yandex.com/legal/international_ads_privacy_policy/en/" target="_blank" rel="noopener noreferrer" data-i18n="legal.privacyLink">Privacy Policy</a>
+                    </li>
+
+                    <!-- Kidoz — kid-safe сеть -->
+                    <li>
+                        <strong>Kidoz</strong>
+                        <span data-i18n="privacy-tanya.sdks.kidoz.desc"> — kid-safe contextual-only advertising network. </span>
+                        <a href="https://www.kidoz.net/privacy-policy/" target="_blank" rel="noopener noreferrer" data-i18n="legal.privacyLink">Privacy Policy</a>
+                    </li>
+
+                    <!-- TopOn -->
+                    <li>
+                        <strong>TopOn</strong>
+                        <span data-i18n="privacy-tanya.sdks.topon.desc"> — advertising mediation platform. </span>
+                        <a href="https://www.toponad.net/en/privacy-policy" target="_blank" rel="noopener noreferrer" data-i18n="legal.privacyLink">Privacy Policy</a>
+                    </li>
+
+                    <!-- Tradplus -->
+                    <li>
+                        <strong>Tradplus</strong>
+                        <span data-i18n="privacy-tanya.sdks.tradplus.desc"> — advertising mediation platform. </span>
+                        <a href="https://www.tradplusad.com/en/privacy-policy" target="_blank" rel="noopener noreferrer" data-i18n="legal.privacyLink">Privacy Policy</a>
+                    </li>
+                </ul>
+
+                <!-- Секция: разрешения Android -->
+                <h2 data-i18n="privacy-tanya.permissions.title">Permissions</h2>
+                <p data-i18n="privacy-tanya.permissions.text">
+                    The App requests only the standard network permissions required for advertising delivery (INTERNET, ACCESS_NETWORK_STATE).
+                </p>
+
+                <!-- Секция: удаление данных и права родителей (требование COPPA) -->
+                <h2 data-i18n="privacy-tanya.deletion.title">Data deletion and parental rights</h2>
+                <p data-i18n="privacy-tanya.deletion.text1">
+                    Because I do not store any personal data on my side, there is nothing for me to delete on my servers. To remove all local data on the device, uninstall the App.
+                </p>
+                <p data-i18n="privacy-tanya.deletion.text2">
+                    If you are a parent and want me to coordinate a data-deletion request to one of the third-party advertising networks listed above, please email me. I will forward the request to the corresponding network's privacy team. Per GDPR I will respond within 30 days.
+                </p>
+
+                <!-- Секция: контакты разработчика -->
+                <h2 data-i18n="legal.contact.title">Contact</h2>
+                <p>
+                    Andrey Pavlov, AS-Pavlov<br>
+                    <a href="mailto:andrey.sergreevich.pavlov@gmail.com">andrey.sergreevich.pavlov@gmail.com</a>
+                </p>
+
+                <!-- Секция: изменения политики -->
+                <h2 data-i18n="legal.changes.title">Changes to this policy</h2>
+                <p data-i18n="legal.changes.text">
+                    If this Privacy Policy changes, the new version will be published on this URL with an updated effective date.
+                </p>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================================= -->
+    <!-- Подвал: копирайт, контакт, ссылки на обе политики          -->
+    <!-- ========================================================= -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="copy">© 2026 AS-Pavlov</p>
+
+            <p class="contact">
+                <a href="mailto:andrey.sergreevich.pavlov@gmail.com">andrey.sergreevich.pavlov@gmail.com</a>
+            </p>
+
+            <nav class="footer-nav" aria-label="Legal">
+                <a href="privacy-tanya.html" data-i18n="footer.privacy.tanya">Privacy: Tanya</a>
+                <span aria-hidden="true">·</span>
+                <a href="privacy-any-training.html" data-i18n="footer.privacy.at">Privacy: Any Training</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Скрипт переключения языка -->
+    <script src="script.js" defer></script>
+</body>
+</html>
