@@ -4,6 +4,7 @@ themediagrid.com, FWN84J, DIRECT, 35d5010d7789b49d
 themediagrid.com, FWN84J, RESELLER, 35d5010d7789b49d
 toponad.com, a0b4a3170ac29277da898f90a3eca477, DIRECT, 1d49fe424a1a456d
 tradplusad.com,5d64b2b9c8fbfb05,DIRECT
+tradplusad.com,2fe24c70936a06fd,DIRECT
 unity.com, 5135116, DIRECT, 96cabb5fbdde37a7
 yandex.com, 315166775, DIRECT
 yango-ads.com, 315166775, DIRECT
