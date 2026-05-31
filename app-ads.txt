@@ -1,4 +1,4 @@
-﻿MANAGERDOMAIN=tradplusad.com
+MANAGERDOMAIN=tradplusad.com
 kidoz.net, 15763, DIRECT, a109366414b7335e
 themediagrid.com, FWN84J, DIRECT, 35d5010d7789b49d
 themediagrid.com, FWN84J, RESELLER, 35d5010d7789b49d
