@@ -512,7 +512,7 @@ smaato.com, 1100059282, RESELLER, 07bcf65f187117b4
 smaato.com, 1100059375, RESELLER, 07bcf65f187117b4
 smaato.com, 1100059563, RESELLER, 07bcf65f187117b4
 smartadserver.com, 1247, RESELLER
-smartadserver.com, 3713, RESELLER
+smartadserver.com, 3713, RESELLER, 060d053dcf45cbf3
 smartadserver.com, 3864, RESELLER
 smartadserver.com, 4284, RESELLER
 smartadserver.com, 4456, RESELLER
@@ -606,21 +606,21 @@ verve.com, 15290, RESELLER, 0c8f5958fc2d6270
 video.unrulymedia.com, 144138083, RESELLER
 video.unrulymedia.com, 169764768, RESELLER
 video.unrulymedia.com, 1767448067723954599, RESELLER
-video.unrulymedia.com, 201313863, RESELLER
-video.unrulymedia.com, 2444764291, RESELLER
+video.unrulymedia.com, 201313863, RESELLER, 98c21ef9a666c68b
+video.unrulymedia.com, 2444764291, RESELLER, 98c21ef9a666c68b
 video.unrulymedia.com, 2613193077, RESELLER, 6f752381ad5ec0e5
 video.unrulymedia.com, 290726769, RESELLER
-video.unrulymedia.com, 3890682751, RESELLER
+video.unrulymedia.com, 3890682751, RESELLER, 98c21ef9a666c68b
 video.unrulymedia.com, 389957698, RESELLER
 video.unrulymedia.com, 3948367200, RESELLER, 98c21ef9a666c68b
-video.unrulymedia.com, 475093422, RESELLER
+video.unrulymedia.com, 475093422, RESELLER, 98c21ef9a666c68b
 video.unrulymedia.com, 498216989, RESELLER
 video.unrulymedia.com, 507498307, RESELLER
 video.unrulymedia.com, 5921144960123684292, RESELLER
-video.unrulymedia.com, 630415254, RESELLER
+video.unrulymedia.com, 630415254, RESELLER, 98c21ef9a666c68b
 video.unrulymedia.com, 657436911, RESELLER
 video.unrulymedia.com, 827123801, RESELLER
-video.unrulymedia.com, 894246135, RESELLER
+video.unrulymedia.com, 894246135, RESELLER, 98c21ef9a666c68b
 video.unrulymedia.com, 905340553, RESELLER
 videoheroes.tv, 212428, RESELLER, 064bc410192443d8
 videoheroes.tv, 212450, RESELLER, 064bc410192443d8
@@ -846,3 +846,8 @@ odeeo.io, 199038217, RESELLER, 36cfd73091d5c3fc
 toponad.com, 167c6b2c1d02bd, RESELLER, 1d49fe424a1a456d
 video.unrulymedia.com, 848837292, RESELLER
 sharethrough.com, aeb4dhxw, RESELLER, d53b998a7bd4ecd2
+openx.com, 562423374, RESELLER, 6a698e2ec38604c6
+rubiconproject.com, 26156, RESELLER, 0bfd66d529a55807
+admanmedia.com, 2411, RESELLER
+rubiconproject.com, 24362, RESELLER, 0bfd66d529a55807
+smaato.com, 1100059831, RESELLER, 07bcf65f187117b4
